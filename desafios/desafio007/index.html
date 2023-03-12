@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens flexiveis</title>
+</head>
+<body>
+    <h1>Imagem Flexivel</h1>
+    <p>voce esta vendo a imagem completa? experimente aumentar o tamanho da sua janela para melhor experiencia</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="/imagens/onepiece-400.png"> <!--Ultimo parametro -->
+        <source media="(max-width: 1000px)" srcset="/imagens/onepiece-700.png"> <!--em seguida ir descendo fazendo de baixo pra cima-->
+        <img src="imagens/onepiece-1000.png" alt="foto one piece"> <!--Começar por img-->
+    </picture>
+</body>
+</html>
